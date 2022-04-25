@@ -1,4 +1,5 @@
 package ru.netology
+
 fun main() {
     print("Введите число людей: ")
     val likes :UInt = readLine()!!.toUInt()
@@ -10,5 +11,9 @@ fun main() {
         println("Понравилось троим")
     if (likes == 4u)
         println("Понравилось четверым")
-    else println("Понравилось $likes человекам")
+    if ((likes == 11u) || (likes == 21u) || (likes == 31u) || (likes == 41u) || (likes == 51u) || (likes == 61u) || (likes == 71u) || (likes == 81u))
+        println("Понравилось $likes человеку")
+          else {
+        println("Понравилось $likes человекам")
+    }
 }
